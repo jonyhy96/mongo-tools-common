@@ -15,9 +15,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/mongodb/mongo-tools-common/db"
-	"github.com/mongodb/mongo-tools-common/intents"
-	"github.com/mongodb/mongo-tools-common/testtype"
+	"github.com/jonyhy96/mongo-tools-common/db"
+	"github.com/jonyhy96/mongo-tools-common/intents"
+	"github.com/jonyhy96/mongo-tools-common/testtype"
 	. "github.com/smartystreets/goconvey/convey"
 	"go.mongodb.org/mongo-driver/bson"
 )

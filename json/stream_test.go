@@ -17,7 +17,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mongodb/mongo-tools-common/testtype"
+	"github.com/jonyhy96/mongo-tools-common/testtype"
 )
 
 // Test values for the stream test.

@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/mongodb/mongo-tools-common/json"
-	"github.com/mongodb/mongo-tools-common/util"
+	"github.com/jonyhy96/mongo-tools-common/json"
+	"github.com/jonyhy96/mongo-tools-common/util"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

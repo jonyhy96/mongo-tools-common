@@ -16,7 +16,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/mongodb/mongo-tools-common/testtype"
+	"github.com/jonyhy96/mongo-tools-common/testtype"
 )
 
 type Optionals struct {

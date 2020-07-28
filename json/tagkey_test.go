@@ -12,7 +12,7 @@ package json
 import (
 	"testing"
 
-	"github.com/mongodb/mongo-tools-common/testtype"
+	"github.com/jonyhy96/mongo-tools-common/testtype"
 )
 
 type basicLatin2xTag struct {

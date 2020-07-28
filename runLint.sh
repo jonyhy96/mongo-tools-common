@@ -1,7 +1,7 @@
 #!/bin/bash
 set -o errexit
 
-golint $(go list ./... | sed -e 's!github.com/mongodb/mongo-tools-common!.!') \
+golint $(go list ./... | sed -e 's!github.com/jonyhy96/mongo-tools-common!.!') \
   | grep -v 'should have comment' \
   | grep -v 'comment on exported' \
   | grep -v 'Id.*should be.*ID'  \

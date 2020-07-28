@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mongodb/mongo-tools-common/log"
+	"github.com/jonyhy96/mongo-tools-common/log"
 )
 
 // key constants

@@ -125,7 +125,6 @@ func (bs *BSONSource) LoadNext() []byte {
 		if bs.reusableBuf != nil {
 			bs.reusableBuf = bigInto
 		}
-	}
 	into = into[:int(bsonSize)]
 	_, err = io.ReadAtLeast(bs.Stream, into[4:], int(bsonSize-4))
 	if err != nil {

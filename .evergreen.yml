@@ -33,7 +33,7 @@ functions:
       type: system
       params:
         files:
-          - "src/github.com/mongodb/mongo-tools-common/testing_output/*.suite"
+          - "src/github.com/jonyhy96/mongo-tools-common/testing_output/*.suite"
   "fetch source" :
     - command: shell.exec
       params:
@@ -44,12 +44,12 @@ functions:
           mkdir -p src/github.com/mongodb
     - command: git.get_project
       params:
-        directory: src/github.com/mongodb/mongo-tools-common
+        directory: src/github.com/jonyhy96/mongo-tools-common
 
   "download mongod":
     command: shell.exec
     params:
-      working_dir: src/github.com/mongodb/mongo-tools-common
+      working_dir: src/github.com/jonyhy96/mongo-tools-common
       script: |
         set -x
         set -v
@@ -75,7 +75,7 @@ functions:
   "start mongod":
     command: shell.exec
     params:
-      working_dir: src/github.com/mongodb/mongo-tools-common
+      working_dir: src/github.com/jonyhy96/mongo-tools-common
       background: true
       script: |
         set -x
@@ -93,7 +93,7 @@ functions:
   "wait for mongod to be ready":
     command: shell.exec
     params:
-      working_dir: src/github.com/mongodb/mongo-tools-common
+      working_dir: src/github.com/jonyhy96/mongo-tools-common
       script: |
         set -x
         set -v
@@ -122,7 +122,7 @@ functions:
   "setup kerberos integration test":
     command: shell.exec
     params:
-      working_dir: src/github.com/mongodb/mongo-tools-common
+      working_dir: src/github.com/jonyhy96/mongo-tools-common
       # Set up Kerberos stuff: run kinit if necessary, and add KDC to registry
       # on Windows (see https://wiki.mongodb.com/display/DH/Testing+Kerberos)
       script: |
@@ -149,7 +149,7 @@ functions:
     command: shell.exec
     type: test
     params:
-      working_dir: src/github.com/mongodb/mongo-tools-common
+      working_dir: src/github.com/jonyhy96/mongo-tools-common
       script: |
         set -x
         set -v
@@ -176,7 +176,7 @@ functions:
     command: shell.exec
     type: test
     params:
-      working_dir: src/github.com/mongodb/mongo-tools-common
+      working_dir: src/github.com/jonyhy96/mongo-tools-common
       script: |
         # export sensitive info before `set -x`
         if [ "Windows_NT" = "$OS" ]; then
@@ -219,7 +219,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/github.com/mongodb/mongo-tools-common
+        working_dir: src/github.com/jonyhy96/mongo-tools-common
         silent: true
         script: |
           set -x
@@ -237,7 +237,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/github.com/mongodb/mongo-tools-common
+        working_dir: src/github.com/jonyhy96/mongo-tools-common
         silent: true
         script: |
           set -x
@@ -264,7 +264,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/github.com/mongodb/mongo-tools-common
+        working_dir: src/github.com/jonyhy96/mongo-tools-common
         silent: true
         script: |
           set -x
@@ -285,7 +285,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/github.com/mongodb/mongo-tools-common
+        working_dir: src/github.com/jonyhy96/mongo-tools-common
         script: |
           set -x
           set -v
@@ -456,7 +456,7 @@ tasks:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/github.com/mongodb/mongo-tools-common
+        working_dir: src/github.com/jonyhy96/mongo-tools-common
         script: |
           set -x
           set -v
@@ -473,7 +473,7 @@ tasks:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/github.com/mongodb/mongo-tools-common
+        working_dir: src/github.com/jonyhy96/mongo-tools-common
         script: |
           set -x
           set -v

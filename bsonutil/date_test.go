@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mongodb/mongo-tools-common/testtype"
+	"github.com/jonyhy96/mongo-tools-common/testtype"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

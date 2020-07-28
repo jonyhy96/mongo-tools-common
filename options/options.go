@@ -18,9 +18,9 @@ import (
 	"time"
 
 	flags "github.com/jessevdk/go-flags"
-	"github.com/mongodb/mongo-tools-common/failpoint"
-	"github.com/mongodb/mongo-tools-common/log"
-	"github.com/mongodb/mongo-tools-common/util"
+	"github.com/jonyhy96/mongo-tools-common/failpoint"
+	"github.com/jonyhy96/mongo-tools-common/log"
+	"github.com/jonyhy96/mongo-tools-common/util"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
 	"go.mongodb.org/mongo-driver/mongo/writeconcern"
 	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"

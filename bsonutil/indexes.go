@@ -1,7 +1,7 @@
 package bsonutil
 
 import (
-	"github.com/mongodb/mongo-tools-common/log"
+	"github.com/jonyhy96/mongo-tools-common/log"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

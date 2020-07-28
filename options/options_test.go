@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mongodb/mongo-tools-common/log"
-	"github.com/mongodb/mongo-tools-common/testtype"
+	"github.com/jonyhy96/mongo-tools-common/log"
+	"github.com/jonyhy96/mongo-tools-common/testtype"
 	. "github.com/smartystreets/goconvey/convey"
 	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
 
