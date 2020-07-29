@@ -88,7 +88,7 @@ func (bb *BufferedBulkInserter) Update(selector, update bson.D) (*mongo.BulkWrit
 
 // Replace adds a document to the buffer for bulk replacement. If the buffer becomes full, the bulk write is performed, returning
 // any error that occurs.
-func (bb *BufferedBulkInserter) Replace(selector, replacement bson.D) (*mongo.BulkWriteResult, error) {
+func (bb *BufferedBulkInserter) Replace(selector, replacement interface{}) (*mongo.BulkWriteResult, error) {
 	return bb.addModel(mongo.NewReplaceOneModel().SetFilter(selector).SetReplacement(replacement).SetUpsert(bb.upsert))
 }
 
